@@ -26,14 +26,14 @@ const NavLink = styled(Link)`
 
 export default function Navbar() {
         return (
-            <nav className="navbar">
+            <Nav>
                 <h1>My Portfolio</h1>
-                <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/skills">Skills</Link></li>
-                    <li><Link to="/projects">Projects</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
-                </ul>
-            </nav>
+                <div>
+                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="/skills">Skills</NavLink>
+                    <NavLink to="/projects">Projects</NavLink>
+                    <NavLink to="/contact">Contact</NavLink>
+                </div>
+            </Nav>
         );
 }
